@@ -12,7 +12,7 @@ import com.violadin.kursroom.model.Order
 import com.violadin.kursroom.model.OrderContent
 
 
-@Database(entities = [Client::class, Fuel::class, Order::class, OrderContent::class], version = 5)
+@Database(entities = [Client::class, Fuel::class, Order::class, OrderContent::class], version = 6)
 abstract class AppDataBase: RoomDatabase() {
     abstract fun dao(): Dao
     abstract fun clientDao(): ClientDao

@@ -3,6 +3,7 @@
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.violadin.kursroom.R
@@ -25,7 +26,7 @@ import kotlinx.coroutines.launch
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        openFragment(AllOrdersListFragment.newInstance())
+//        openFragment(AllOrdersListFragment.newInstance())
 
 //        val local1 = AppDataBase.getInstance(applicationContext).clientDao()
 //        val local2 = AppDataBase.getInstance(applicationContext).fuelDao()
@@ -43,12 +44,16 @@ import kotlinx.coroutines.launch
         bottomNavigationView.setOnNavigationItemReselectedListener {
             when (it.itemId) {
                 R.id.page1 -> {
+                    Toast.makeText(applicationContext, "1", Toast.LENGTH_LONG).show()
                     openFragment(AllOrdersListFragment.newInstance())
                 }
                 R.id.page2 -> {
+                    Log.i("123", "u are alive, dude?")
+                    Toast.makeText(applicationContext, "2", Toast.LENGTH_LONG).show()
                     openFragment(PopularTenClientsListFragment.newInstance())
                 }
                 R.id.page3 -> {
+                    Toast.makeText(applicationContext, "3", Toast.LENGTH_LONG).show()
                     openFragment(PopularTenDateListFragment.newInstance())
                 }
             }
