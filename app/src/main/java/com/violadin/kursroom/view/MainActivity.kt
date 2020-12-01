@@ -25,6 +25,8 @@ import kotlinx.coroutines.launch
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        openFragment(AllOrdersListFragment.newInstance())
+
 //        val local1 = AppDataBase.getInstance(applicationContext).clientDao()
 //        val local2 = AppDataBase.getInstance(applicationContext).fuelDao()
 //        val local3 = AppDataBase.getInstance(applicationContext).orderDao()
