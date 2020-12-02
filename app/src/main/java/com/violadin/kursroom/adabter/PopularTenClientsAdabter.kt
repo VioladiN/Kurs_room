@@ -16,7 +16,7 @@ class PopularTenClientsAdabter(private var topClients: List<TopClients>): Recycl
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.name.text = topClients[position].client
-        holder.money.text = "123"
+        holder.money.text = topClients[position].total.toString()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

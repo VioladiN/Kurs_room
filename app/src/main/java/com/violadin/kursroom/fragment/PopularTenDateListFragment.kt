@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.violadin.kursroom.R
-import com.violadin.kursroom.adabter.PopularTenClientsAdabter
 import com.violadin.kursroom.adabter.PopularTenDateAdabter
 import com.violadin.kursroom.viewmodel.FuelStationViewModel
 

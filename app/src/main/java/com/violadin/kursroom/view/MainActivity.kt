@@ -2,23 +2,13 @@
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.violadin.kursroom.R
-import com.violadin.kursroom.database.AppDataBase
 import com.violadin.kursroom.fragment.AddOrderFragment
 import com.violadin.kursroom.fragment.AllOrdersListFragment
 import com.violadin.kursroom.fragment.PopularTenClientsListFragment
 import com.violadin.kursroom.fragment.PopularTenDateListFragment
-import com.violadin.kursroom.model.Client
-import com.violadin.kursroom.model.Fuel
-import com.violadin.kursroom.model.Order
-import com.violadin.kursroom.model.OrderContent
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import java.util.*
 
  class MainActivity : AppCompatActivity() {
 

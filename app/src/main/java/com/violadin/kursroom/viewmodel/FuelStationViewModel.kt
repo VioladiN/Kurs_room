@@ -14,10 +14,6 @@ class FuelStationViewModel(application: Application): AndroidViewModel(applicati
     private val dbFuel = AppDataBase.getInstance(application.applicationContext).fuelDao()
     private val dbOrderContent = AppDataBase.getInstance(application.applicationContext).orderContentDao()
 
-//    internal val allOrders: LiveData<List<AllOrders>> = db.getAllOrders()
-//    internal val topClients: LiveData<List<TopClients>> = db.getTopTenClients()
-//    internal val topDates: LiveData<List<TopDates>> = db.getTopTenDates()
-
     fun insertClient(client: Client) {
         dbClient.insert(client)
     }
