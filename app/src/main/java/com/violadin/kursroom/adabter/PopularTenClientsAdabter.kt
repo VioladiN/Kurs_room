@@ -6,15 +6,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.violadin.kursroom.R
+import com.violadin.kursroom.model.TopClients
 
-class PopularTenClientsAdabter(private var topClients: List<Double>): RecyclerView.Adapter<PopularTenClientsAdabter.ViewHolder>() {
+class PopularTenClientsAdabter(private var topClients: List<TopClients>): RecyclerView.Adapter<PopularTenClientsAdabter.ViewHolder>() {
 
     override fun getItemCount(): Int {
         return topClients.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
+        holder.name.text = topClients[position].name
+        holder.money.text = topClients[position].spentMoney.toString()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -24,7 +26,8 @@ class PopularTenClientsAdabter(private var topClients: List<Double>): RecyclerVi
     }
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-
+        val name = itemView.findViewById<TextView>(R.id.topclients_client)
+        val money = itemView.findViewById<TextView>(R.id.topclients_spentmoney)
     }
 
 }

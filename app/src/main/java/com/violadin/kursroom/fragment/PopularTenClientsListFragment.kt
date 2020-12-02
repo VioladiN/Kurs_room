@@ -36,9 +36,9 @@ class PopularTenClientsListFragment: Fragment() {
 
         model = ViewModelProvider(this).get(FuelStationViewModel::class.java)
 
-//        model.topClients.observe(viewLifecycleOwner, {
-//            allClients -> recyclerView.adapter = PopularTenClientsAdabter(allClients)
-//        })
+        model.getTopTenClients().observe(viewLifecycleOwner, {
+            topClients -> recyclerView.adapter = PopularTenClientsAdabter(topClients)
+        })
         return view
     }
 }

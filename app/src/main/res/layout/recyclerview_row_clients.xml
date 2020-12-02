@@ -10,7 +10,7 @@
         android:background="@color/teal_200" />
 
     <TextView
-        android:id="@+id/tv_client"
+        android:id="@+id/topclients_client"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -19,7 +19,7 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/tv_spentmoney"
+        android:id="@+id/topclients_spentmoney"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
