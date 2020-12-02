@@ -2,17 +2,20 @@ package com.violadin.kursroom.database
 
 
 import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
+import androidx.room.*
+import com.violadin.kursroom.converter.Converters
 import com.violadin.kursroom.database.dao.*
+import com.violadin.kursroom.database.dao.Dao
 import com.violadin.kursroom.model.Client
 import com.violadin.kursroom.model.Fuel
 import com.violadin.kursroom.model.Order
 import com.violadin.kursroom.model.OrderContent
 
 
-@Database(entities = [Client::class, Fuel::class, Order::class, OrderContent::class], version = 6)
+@Database(entities = [Client::class, Fuel::class, Order::class, OrderContent::class],
+    version = 6,
+    exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class AppDataBase: RoomDatabase() {
     abstract fun dao(): Dao
     abstract fun clientDao(): ClientDao

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">KursRoom</string>
+
+    <string name="client_name">Client name:</string>
+    <string name="date">Date:</string>
+    <string name="type_fuel">Fuel type:</string>
+    <string name="liters">Liters:</string>
+    <string name="add_order">Add order</string>
+
 </resources>

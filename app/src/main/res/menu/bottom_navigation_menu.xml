@@ -14,4 +14,9 @@
         android:enabled="true"
         android:icon="@drawable/icon_3"
         android:title="3"/>
+    <item
+        android:id="@+id/page4"
+        android:enabled="true"
+        android:icon="@drawable/icon_3"
+        android:title="4"/>
 </menu>

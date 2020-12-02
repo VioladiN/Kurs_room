@@ -8,6 +8,6 @@ import androidx.room.PrimaryKey
 data class Fuel(
     @PrimaryKey(autoGenerate = true) val id: Int? = null,
     @ColumnInfo(name = "name") val name: String?,
-    @ColumnInfo(name = "price_per_litr") val priceLitr: Double?
+    @ColumnInfo(name = "price_per_liter") val price_per_liter: Double?
     ) {
 }

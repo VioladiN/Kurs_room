@@ -33,11 +33,8 @@ class AllOrdersListFragment: Fragment() {
             RecyclerView.VERTICAL, false)
         recyclerView.layoutManager = linearLayoutManager
 
-        model = ViewModelProvider(this).get(FuelStationViewModel::class.java)
 
-        model.allOrders.observe(viewLifecycleOwner, {
-            allOrders -> recyclerView.adapter = AllOrdersListAdabter(allOrders)
-        })
+
         return view
     }
 }

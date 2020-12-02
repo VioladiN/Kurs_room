@@ -1,0 +1,72 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:layout_margin="20dp">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/client_name"/>
+        <EditText
+            android:id="@+id/ev_client_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="3"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/date"/>
+        <EditText
+            android:id="@+id/ev_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="3"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/type_fuel"/>
+        <EditText
+            android:id="@+id/ev_type_fuel"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="0"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="1 - 92; 2- 95; 3 - 100; 4 - diesel"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="@string/liters"/>
+        <EditText
+            android:id="@+id/ev_liters"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="3"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_column="3"
+            android:id="@+id/btn_add_client"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="@string/add_order"/>
+    </TableRow>
+
+</TableLayout>
