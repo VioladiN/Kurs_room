@@ -10,7 +10,7 @@
         android:background="@color/teal_200" />
 
     <TextView
-        android:id="@+id/tv_client"
+        android:id="@+id/allorders_client"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -18,7 +18,7 @@
         android:text="" />
 
     <TextView
-        android:id="@+id/tv_fuel"
+        android:id="@+id/allorders_fuel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -26,7 +26,7 @@
         android:text="" />
 
     <TextView
-        android:id="@+id/tv_litr_fuel"
+        android:id="@+id/allorders_liters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -34,7 +34,7 @@
         android:text="" />
 
     <TextView
-        android:id="@+id/tv_date"
+        android:id="@+id/allorders_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

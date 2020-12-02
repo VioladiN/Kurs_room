@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import com.violadin.kursroom.database.AppDataBase
-import com.violadin.kursroom.model.Client
+import com.violadin.kursroom.model.*
 
 class FuelStationViewModel(application: Application): AndroidViewModel(application) {
 
@@ -21,4 +21,20 @@ class FuelStationViewModel(application: Application): AndroidViewModel(applicati
     fun insertClient(client: Client) {
         dbClient.insert(client)
     }
+
+    fun insertOrder(order: Order) {
+        dbOrders.insert(order)
+    }
+
+    fun insertOrderContent(orderContent: OrderContent) {
+        dbOrderContent.insert(orderContent)
+    }
+
+    fun insertFuel(fuel: Fuel) {
+        dbFuel.insert(fuel)
+    }
+
+    fun getAllOrders(): LiveData<List<AllOrders>> =
+        db.getAllOrders()
+
 }

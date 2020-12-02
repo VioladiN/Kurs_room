@@ -32,9 +32,11 @@ class AllOrdersListFragment: Fragment() {
         val linearLayoutManager = LinearLayoutManager(view.context,
             RecyclerView.VERTICAL, false)
         recyclerView.layoutManager = linearLayoutManager
+        model = ViewModelProvider(this).get(FuelStationViewModel::class.java)
 
-
-
+        model.getAllOrders().observe(viewLifecycleOwner, {
+            allOrders -> recyclerView.adapter = AllOrdersListAdabter(allOrders)
+        })
         return view
     }
 }
