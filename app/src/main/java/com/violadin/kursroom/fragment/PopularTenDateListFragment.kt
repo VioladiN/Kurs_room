@@ -36,9 +36,9 @@ class PopularTenDateListFragment: Fragment() {
 
         model = ViewModelProvider(this).get(FuelStationViewModel::class.java)
 
-//        model.topDates.observe(viewLifecycleOwner, {
-//            allDates -> recyclerView.adapter = PopularTenDateAdabter(allDates)
-//        })
+        model.getTopTenDates().observe(viewLifecycleOwner, {
+            topTenDates -> recyclerView.adapter = PopularTenDateAdabter(topTenDates)
+        })
         return view
     }
 }

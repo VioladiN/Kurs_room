@@ -40,4 +40,7 @@ class FuelStationViewModel(application: Application): AndroidViewModel(applicati
     fun getTopTenClients(): LiveData<List<TopClients>> =
         db.getTopTenClients()
 
+    fun getTopTenDates(): LiveData<List<TopDates>> =
+        db.getTopTenDates()
+
 }

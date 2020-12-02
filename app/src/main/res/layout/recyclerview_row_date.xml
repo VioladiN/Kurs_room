@@ -10,25 +10,24 @@
         android:background="@color/teal_200"/>
 
     <TextView
-        android:id="@+id/tv_date"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="25sp"
-        android:text=""
-        android:layout_width="match_parent" />
-
-    <TextView
-        android:id="@+id/tv_money"
+        android:id="@+id/topdates_date"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text=""
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/topdates_money"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""
         android:textSize="25sp"
         android:layout_width="match_parent" />
 
     <TextView
-        android:id="@+id/tv_clients"
+        android:id="@+id/topdates_clients"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_weight="1"

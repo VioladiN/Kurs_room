@@ -15,7 +15,7 @@ class AllOrdersListAdabter(private var allOrders: List<AllOrders>): RecyclerView
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.name.text = allOrders[position].name
+        holder.name.text = allOrders[position].client
         holder.fuel.text = allOrders[position].fuel
         holder.liters.text = allOrders[position].liters.toString()
         holder.date.text = allOrders[position].date.toString()
