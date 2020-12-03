@@ -3,20 +3,20 @@
         android:id="@+id/page1"
         android:enabled="true"
         android:icon="@drawable/icon_1"
-        android:title="1"/>
+        android:title="All orders"/>
     <item
         android:id="@+id/page2"
         android:enabled="true"
         android:icon="@drawable/icon_2"
-        android:title="2"/>
+        android:title="Top 10 persons"/>
     <item
         android:id="@+id/page3"
         android:enabled="true"
         android:icon="@drawable/icon_3"
-        android:title="3"/>
+        android:title="Top 10 dates"/>
     <item
         android:id="@+id/page4"
         android:enabled="true"
-        android:icon="@drawable/icon_3"
-        android:title="4"/>
+        android:icon="@drawable/icon_plus"
+        android:title="Add order"/>
 </menu>
